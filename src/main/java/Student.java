@@ -1,5 +1,3 @@
-import java.util.concurrent.TimeUnit;
-
 class Person
 
 {
@@ -80,11 +78,14 @@ public class Student extends Person implements IStudyable
 
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args){
 
         Student s = new Student(23,"dqrcsc","20150723");
+
         s.study(5,6);
+
         Student.getCnt();
+
         s.run();
 
     }
